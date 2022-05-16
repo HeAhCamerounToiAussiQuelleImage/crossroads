@@ -1,0 +1,4 @@
+export enum types  {
+    LOGGIN_ACTION = "LOGGIN_ACTION",
+    REGISTER_ACTION = "LOGGIN_ACTION"
+}
