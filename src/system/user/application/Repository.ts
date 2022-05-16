@@ -1,12 +1,19 @@
-import { UserInputCreateDTO, UserInputLoginDTO } from "./Interfaces";
+import { UserInputCreateDAO, UserInputLoginDAO } from "./Interfaces";
+
+import http from "@/system/http/Request";
 
 export default class UserRepository {
+   client
 
-   loginRequest(data:UserInputLoginDTO) {
-       
+   constructor(){
+      this.client = http()
    }
 
-   registerRequest(data:UserInputCreateDTO){
+   loginRequest(data:UserInputLoginDAO) {
+       this.client?.graphql.request
+   }
+
+   registerRequest(data:UserInputCreateDAO){
        
    }
 }
