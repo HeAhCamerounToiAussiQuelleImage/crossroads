@@ -1,16 +1,16 @@
-import { UserInputCreateDTO, UserInputLoginDTO } from "./Interfaces";
+import { UserInputCreateDAO, UserInputLoginDAO } from "./Interfaces";
 
 
 export class LoginBoundary {
 
-    execute(data: UserInputLoginDTO){
+    execute(data: UserInputLoginDAO){
 
     }
 }
 
 export class RegisterBoundary {
 
-    execute(data: UserInputCreateDTO){
+    execute(data: UserInputCreateDAO){
         
     }
 }
